@@ -1,0 +1,311 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1874,3700" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Excel.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Sharepoint</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="846,3635" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="TrainInformation" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Rute + cumpără - Bilete online CFR Călători" sap:VirtualizedContainerService.HintSize="784,3524" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="512,434" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Station1" />
+              <Variable x:TypeArguments="x:String" Name="Station2" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Read Input" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Departure Station is:" Title="Departure">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">[Station1]</OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,239" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Arrival Station is:" Title="Arrival">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">[Station2]</OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+            </Sequence>
+            <Sequence DisplayName="Acquire Data" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'De la'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Text="[Station1]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvElementArea="759, 376, 284, 40" CvType="InputBox" DesignTimeRectangle="762, 377, 280, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-station-dep…'" FullSelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="759be3bb-c301-4ec9-82ca-15e3cd6d9664" InformativeScreenshot="0f8511229c512ac7aee32a1fe3aeb01f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="724, 348, 36, 15" CvTextArgument="De la" CvType="Text" DesignTimeRectangle="725, 345, 36, 24" ElementType="Text" FriendlyName="'De la'" FullSelectorArgument="&lt;webctrl parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='form-search' tag='LABEL' type='' class='' aaname='De la' check:innerText='De la' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Până la'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Text="[Station2]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvElementArea="758, 462, 286, 41" CvType="InputBox" DesignTimeRectangle="762, 463, 280, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-station-arr…'" FullSelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="83f0867e-c5fe-48b8-9ac9-dc96d855fc1c" InformativeScreenshot="a6387b67a41d0c5b2c16b23422202706.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="723, 434, 54, 15" CvTextArgument="Pana la" CvType="Text" DesignTimeRectangle="725, 431, 53, 24" ElementType="Text" FriendlyName="'Până la'" FullSelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' type='' class='' check:innerText='Până la' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Caută'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvElementArea="723, 704, 70, 40" CvTextArea="736, 716, 44, 15" CvTextArgument="Cauta" CvType="Button" DesignTimeRectangle="725, 706, 68, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Caută'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Caută' check:text='Caută' /&gt;" Guid="2d30d095-0433-47ca-bba4-0f873ffe5816" InformativeScreenshot="16243ccb3b76e4c7dc86434b313cae19.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NExtractData sap2010:Annotation.AnnotationText="TO FIX: &#xA;Different Structure when the Trains have not arrived yet&#xA;" AppendResults="False" ContinueOnError="True" DataTable="[TrainInformation]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Train_Information' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Departure_Time' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ride_Length' ReferenceName='Column2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Delay' ReferenceName='Column3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Arrival_Time' ReferenceName='Column4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="388,214" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Rute-trenuri/Constanta/Targoviste?DepartureDate=15.01.2024&amp;TimeSelectionId=0&amp;MinutesInDay=0&amp;OrderingTypeId=0&amp;ConnectionsTypeId=1&amp;BetweenTrainsMinimumMinutes=15&amp;ChangeStationName=" DesignTimeRectangle="725, 326, 1110, 1395" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='div-results' tag='UL' /&gt;" Guid="aa3009bb-a9b1-4287-b194-5981ca06bd67" InformativeScreenshot="7b996e9787795f8a6f46aa6c0cb740f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Constanța - Târgoviște - Bilete online CFR Călători' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NExtractData>
+            </Sequence>
+            <Sequence DisplayName="Save Data In Excel" sap:VirtualizedContainerService.HintSize="704,1810" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="642,1699" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                <ueab:ExcelProcessScopeX.Body>
+                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,1612" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="546,1501" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" TemplatePath="template.xlsx" UseTemplate="True" WorkbookPath="[Station1 + &quot;-&quot; + Station2]">
+                        <ueab:ExcelApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="634,1295" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence DisplayName="Write General Info" sap:VirtualizedContainerService.HintSize="572,81" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Train Information&quot;]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;From:&quot;]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[Station1]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;To:&quot;]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;E1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[Station2]" />
+                              </Sequence>
+                              <Sequence DisplayName="Write Table Header" sap:VirtualizedContainerService.HintSize="572,81" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;Departure Time&quot;]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[&quot;Delay&quot;]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[&quot;Arrival Time&quot;]" />
+                                <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;D3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[&quot;Length&quot;]" />
+                              </Sequence>
+                              <Sequence DisplayName="Write Table Content" sap:VirtualizedContainerService.HintSize="572,942" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TrainInformation]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,831" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                  <ui:ForEachRow.Body>
+                                    <ActivityAction x:TypeArguments="sd:DataRow">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentTrain" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,645" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[CurrentTrain.Item(&quot;Departure_Time&quot;)]" />
+                                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_12" Value="[CurrentTrain.Item(&quot;Delay&quot;)]" />
+                                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_13" Value="[CurrentTrain.Item(&quot;Arrival_Time&quot;)]" />
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEachRow.Body>
+                                </ui:ForEachRow>
+                              </Sequence>
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:ExcelApplicationCard.Body>
+                      </ueab:ExcelApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelProcessScopeX.Body>
+              </ueab:ExcelProcessScopeX>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 2576, 1416" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANWSURBVHhe5ddJyI1RHMfx1zxLkbJAmYWsFCFjGSJCMiRDyBQpCis7YYFMxRIbK0slmRZWpijzUEhkXMjc9fv2npPH9Xuv+9brtfgvPrdzfuc59z7POec5z3NrSqVSaDaMxIaR2DASG0Ziw0hsGIkNI7FhJDaMxIaR2DASG0Ziw0hsGIkNI7FhJDaMxIaR2DASG0Ziw0hsGIkNI7FhJDU1C07WxwA5JW/knfFWPsrXv3gvB2XufzbTXWRd1sgneSxbZL2skqWyTGjfIORrZZEUf2y+rJCVMl7cbzQ+G/6uv5yVkuyUdpLbOstCmSnNU5YNEgZotayT6ZLb+sgmYSAnpyxrL0tkeQNh0OdIUyn+Ti0b/sJMfpGbMiplGRfIksdnuSTNhLYmcku+yUt5JRekhdB+Q/he2hjYjZK/l77lg1mt3Ndxx9c5AFwcF8TJ7ZA2Un7MUbkuzNgYuSMdhLYewqCMTfXWkgenl3yXial+Xs6lchHtzJ6bVYdjh0v591RWFjCCLE1O/qqMlPJjsoeyuVDvKPSnPE/YDCfIwJRli4WBnSrjhMHYLsVjwKy1rQK3YZekeHtWp1BhiTPrbHTHZKgU24t6CoOUZ7HcfuHCPshFyUsfJ4S2H8lx6SS5nVmcJewrM/5imrSS3Lf+UmGbMCvMOjs5M8emxUmwYf3eqXbj43GWbw32iq6pzCp4IgekmxQvjluBPYPfYwN8Lbkto0/fKvWWuu/vauiDHZqLZ7fODdyvWV7WRSxx+tD3UCr3E9pYOdRHp3rREKGN26J7Kg+T8uMajz6YLXcPVtJSuHB28fvCMz+3jRBuJfaEYh9wsWeE/tRPy5RU/j/0wT16WVjWbEyYVAEnzBshfdl08hJkpbjVUkml42nLA/Xv6GOwPBCe2TyvmdVn8lQeCW3PE3Z+0MYbIW3UKbOSQJnsntwVHpW8R1DmUXlNeA+gfjtllDPq4OWLTe7Pk25IqcCzfLZsFTYnUL4iDMJu4S2Q5Y5dqV7JHjksL4SL3is8HRggvpNNcl8Zjj+Syo2zN7h/SJHYMBIbRmLDSGwYiQ0jsWEkNozEhpHYMBIbRmLDSGwYiQ0jsWEkNozEhpHYMBIbRmLDSGwYiQ0jsWEkNozEhpHYMI5SzU8VZiv/ml6tLgAAAABJRU5ErkJggg==" InformativeScreenshot="d7150cfcb3139425585220e53ac98e95.jpg" Selector="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" Title="Rute + cumpără - Bilete online CFR Călători" Url="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

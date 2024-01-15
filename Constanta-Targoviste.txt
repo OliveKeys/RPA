@@ -1,0 +1,9 @@
+﻿Train 0 departs at 05:30 with a delay of +1 min întârziere and arrives at 11:45
+Train 1 departs at 08:20 with a delay of +4 min întârziere and arrives at 13:30
+Train 2 departs at 10:40 with a delay of la timp and arrives at 15:32
+Train 3 departs at 10:40 with a delay of +3 min întârziere and arrives at 16:03
+Train 4 departs at 11:30 with a delay of la timp and arrives at 17:22
+Train 5 departs at 13:30 with a delay of la timp and arrives at 18:00
+Train 6 departs at 13:30 with a delay of +9 min întârziere and arrives at 19:01
+Train 7 departs at 14:20 with a delay of +9 min întârziere and arrives at 19:01
+Train 8 departs at 16:30 with a delay of +2 min întârziere and arrives at 21:20

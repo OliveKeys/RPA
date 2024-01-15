@@ -1,0 +1,13 @@
+﻿Train 0 departs at 06:24 with a delay of +6 min întârziere and arrives at 11:21
+Train 1 departs at 07:00 with a delay of +5 min întârziere and arrives at 09:29
+Train 2 departs at 08:20 with a delay of +2 min întârziere and arrives at 10:47
+Train 3 departs at 09:30 with a delay of +3 min întârziere and arrives at 11:37
+Train 4 departs at 10:30 with a delay of +2 min întârziere and arrives at 12:57
+Train 5 departs at 11:30 with a delay of la timp and arrives at 14:06
+Train 6 departs at 12:30 with a delay of +1 min întârziere and arrives at 15:06
+Train 7 departs at 14:20 with a delay of la timp and arrives at 16:50
+Train 8 departs at 15:22 with a delay of +1 min întârziere and arrives at 17:58
+Train 9 departs at 16:33 with a delay of +2 min întârziere and arrives at 19:01
+Train 10 departs at 17:30 with a delay of -3 min mai devreme and arrives at 19:37
+Train 11 departs at 18:30 with a delay of +1 min întârziere and arrives at 21:06
+Train 12 departs at 20:27 with a delay of sosește la timp la Constanța* and arrives at 23:00
