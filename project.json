@@ -4,6 +4,7 @@
   "description": "Description",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DocumentUnderstanding.Activities": "[2.4.1]",
     "UiPath.Excel.Activities": "[2.23.0-preview]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.MicrosoftOffice365.Activities": "[2.4.3]",
