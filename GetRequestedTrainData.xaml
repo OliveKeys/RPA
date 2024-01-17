@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetRequestedTrainData" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetRequestedTrainData" this:GetRequestedTrainData.DepartureStation="Bucuresti" this:GetRequestedTrainData.ArrivalStation="Cluj" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="DepartureStation" Type="InArgument(x:String)" />
     <x:Property Name="ArrivalStation" Type="InArgument(x:String)" />
@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1874,1790</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1874,1109</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetRequestedTrainData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -114,27 +114,27 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetRequestedTrainData" sap:VirtualizedContainerService.HintSize="1732,1725" sap2010:WorkflowViewState.IdRef="Sequence_16">
+  <Sequence DisplayName="GetRequestedTrainData" sap:VirtualizedContainerService.HintSize="546,1044" sap2010:WorkflowViewState.IdRef="Sequence_16">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Rute + cumpără - Bilete online CFR Călători" sap:VirtualizedContainerService.HintSize="1670,1614" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Rute + cumpără - Bilete online CFR Călători" sap:VirtualizedContainerService.HintSize="484,933" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Browser Operations" sap:VirtualizedContainerService.HintSize="1636,1396" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Browser Operations" sap:VirtualizedContainerService.HintSize="450,706" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1574,145" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entered Website&quot;]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1574,145" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Departure: &quot; + DepartureStation]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1574,145" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Arrival: &quot; + ArrivalStation]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entered Website&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Departure: &quot; + DepartureStation]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Arrival: &quot; + ArrivalStation]" />
             <Flowchart sap:VirtualizedContainerService.HintSize="1574,726" sap2010:WorkflowViewState.IdRef="Flowchart_2">
               <Flowchart.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="FailedDepartureInput" />
@@ -143,25 +143,25 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <av:Point x:Key="ShapeLocation">360,2.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">350,2.5</av:Point>
                   <av:Size x:Key="ShapeSize">60,75</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">390,77.5 390,103.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">380,77.5 380,104</av:PointCollection>
                   <x:Double x:Key="Width">1540</x:Double>
                   <x:Double x:Key="Height">688.6320000000001</x:Double>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <Flowchart.StartNode>
-                <x:Reference>__ReferenceID11</x:Reference>
+                <x:Reference>__ReferenceID13</x:Reference>
               </Flowchart.StartNode>
               <FlowStep x:Name="__ReferenceID0">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">290,183.5</av:Point>
-                    <av:Size x:Key="ShapeSize">200,53</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">390,236.5 390,263.5</av:PointCollection>
+                    <av:Point x:Key="ShapeLocation">280,174</av:Point>
+                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">380,226 380,264</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into 'De la'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Text="[DepartureStation]" Version="V3">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DeselectAfter="False" DisplayName="Type Into 'De la'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Text="[DepartureStation]" Version="V3">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvElementArea="759, 376, 284, 40" CvType="InputBox" DesignTimeRectangle="762, 377, 280, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-station-dep…'" FullSelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="759be3bb-c301-4ec9-82ca-15e3cd6d9664" InformativeScreenshot="0f8511229c512ac7aee32a1fe3aeb01f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -173,305 +173,433 @@
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
                 <FlowStep.Next>
-                  <FlowStep x:Name="__ReferenceID1">
+                  <FlowStep x:Name="__ReferenceID11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">290,263.5</av:Point>
-                        <av:Size x:Key="ShapeSize">200,53</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">390,316.5 390,346.5</av:PointCollection>
+                        <av:Point x:Key="ShapeLocation">280,264</av:Point>
+                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">380,316 380,374</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState DisplayName="Check App State 'Nu a'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="1" Version="V3">
+                    <uix:NCheckState DisplayName="Check App State 'Constanța'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="1" Version="V3">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_23">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Boolean">[FailedDepartureInput]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                            </Assign.Value>
-                          </Assign>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Constanța'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvTextArea="768, 412, 75, 19" CvTextArgument="Constanta" CvType="Text" DesignTimeRectangle="763, 406, 278, 30" DesignTimeScaleFactor="1" FriendlyName="'Constanța'" FullSelectorArgument="&lt;webctrl id='ui-id-27' tag='DIV' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='ui-id-27' tag='DIV' type='' class='ui-menu-item-wrapper' aaname='' /&gt;" Guid="84decc3f-93cc-473b-8e74-5dac3f259742" InformativeScreenshot="bb2759c86138ef87da64d14baef1c380.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CvElementArea="761, 366, 283, 40" CvType="InputBox" DesignTimeRectangle="762, 367, 280, 38" ElementType="InputBox" FriendlyName="'cons'" FullSelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
-                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,380" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_24">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Boolean">[FailedDepartureInput]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Departure Entered Successfully&quot;]" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Rute + cumpără'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvTextArea="724, 277, 225, 35" CvTextArgument="Rute + cumpara" CvType="Text" DesignTimeRectangle="725, 273, 224, 38" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Rute + cumpără'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='                                         Rute + cumpără                                     ' check:innerText='Rute + cumpără' /&gt;" Guid="04362ffd-43b1-4c9d-8b51-35f3d3633268" InformativeScreenshot="bb8b7688c673f7dc5264dc45969ccc54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="710, 181, 1140, 54" FriendlyName="'TRAFIC INTERN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;div' parentid='page' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='page' tag='DIV' class='navbar navbar-dark navbar-inverse navbar-expand-xl text-dark pt-1 pb-1 pl-0 pr-0 font-weight-bold text-1-1rem' aaname='                                                                                                                                ' check:innerText='TRAFIC INTERN&amp;#xD;&amp;#xA; Planificare călătorie &amp;#xD;&amp;#xA; Suport &amp;#xD;&amp;#xA; &amp;#xD;&amp;#xA;CONTUL MEU&amp;#xD;&amp;#xA;Autentificare&amp;#xD;&amp;#xA;RO EN' /&gt;" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
                         </Sequence>
                       </uix:NCheckState.IfNotExists>
                       <uix:NCheckState.Target>
-                        <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="586, 378, 384, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Nu a'" FullSelectorArgument="&lt;webctrl id='span-validation-input-station-departure-name' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='span-validation-input-station-departure-name' tag='SPAN' type='' class='text-danger field-validation-valid' aaname='Nu a fost găsită nicio stație cu acest nume!' check:innerText='Nu a fost găsită nicio stație cu acest nume!' /&gt;" Guid="6ce36319-9a2e-4faa-8f7b-b0f4e15051d5" InformativeScreenshot="908bd67ab850e25a9b757bc6aaac89b6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvTextArea="768, 412, 75, 19" CvTextArgument="Constanta" CvType="Text" DesignTimeRectangle="763, 406, 278, 30" DesignTimeScaleFactor="1" FriendlyName="'Constanța'" FullSelectorArgument="&lt;webctrl id='ui-id-21' tag='DIV' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='ui-id-21' tag='DIV' type='' class='ui-menu-item-wrapper' aaname='' /&gt;" Guid="af8d55fa-81ee-40cd-b536-6314f40b16f9" InformativeScreenshot="32fee65594430cccef11cbf886d55bc1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target DesignTimeRectangle="586, 288, 44, 30" ElementType="Text" FriendlyName="'De la'" FullSelectorArgument="&lt;webctrl parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='form-search' tag='LABEL' type='' class='' aaname='De la' check:innerText='De la' /&gt;" SearchSteps="FuzzySelector" />
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvElementArea="761, 367, 283, 39" CvType="InputBox" DesignTimeRectangle="762, 367, 280, 38" ElementType="InputBox" FriendlyName="'const'" FullSelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
                       </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
                     <FlowStep.Next>
-                      <FlowDecision x:Name="__ReferenceID2" DisplayName="Departure Input Incorrect" sap:VirtualizedContainerService.HintSize="141,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-                        <FlowDecision.Condition>
-                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="FailedDepartureInput = True" />
-                        </FlowDecision.Condition>
+                      <FlowStep x:Name="__ReferenceID1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <av:Point x:Key="ShapeLocation">319.5,346.5</av:Point>
-                            <av:Size x:Key="ShapeSize">141,87</av:Size>
-                            <av:PointCollection x:Key="TrueConnector">319.5,390 180,390 180,453.5</av:PointCollection>
-                            <av:PointCollection x:Key="FalseConnector">460.5,390 511.2282206273558,390 511.2282206273558,73.5 710,73.5 710,103.5</av:PointCollection>
+                            <av:Point x:Key="ShapeLocation">280,374</av:Point>
+                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">380,426 380,446.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <FlowDecision.True>
-                          <FlowStep x:Name="__ReferenceID3">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">80,453.5</av:Point>
-                                <av:Size x:Key="ShapeSize">200,53</av:Size>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <Throw Exception="[new Exception(&quot;Incorrect Departure&quot;)]" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="Throw_2">
+                        <uix:NCheckState DisplayName="Check App State 'Nu a'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="1" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_17">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                            </Throw>
-                          </FlowStep>
-                        </FlowDecision.True>
-                        <FlowDecision.False>
-                          <FlowStep x:Name="__ReferenceID5">
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[FailedDepartureInput]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,380" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[FailedDepartureInput]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Departure Entered Successfully&quot;]" />
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="586, 378, 384, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Nu a'" FullSelectorArgument="&lt;webctrl id='span-validation-input-station-departure-name' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='span-validation-input-station-departure-name' tag='SPAN' type='' class='text-danger field-validation-valid' aaname='Nu a fost găsită nicio stație cu acest nume!' check:innerText='Nu a fost găsită nicio stație cu acest nume!' /&gt;" Guid="6ce36319-9a2e-4faa-8f7b-b0f4e15051d5" InformativeScreenshot="908bd67ab850e25a9b757bc6aaac89b6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="586, 288, 44, 30" ElementType="Text" FriendlyName="'De la'" FullSelectorArgument="&lt;webctrl parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='form-search' tag='LABEL' type='' class='' aaname='De la' check:innerText='De la' /&gt;" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                        <FlowStep.Next>
+                          <FlowDecision x:Name="__ReferenceID2" Condition="[FailedDepartureInput = True]" DisplayName="Departure Input Incorrect" sap:VirtualizedContainerService.HintSize="139,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">610,103.5</av:Point>
-                                <av:Size x:Key="ShapeSize">200,53</av:Size>
-                                <av:PointCollection x:Key="ConnectorLocation">710,156.5 710,173.5</av:PointCollection>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <av:Point x:Key="ShapeLocation">310.5,446.5</av:Point>
+                                <av:Size x:Key="ShapeSize">139,87</av:Size>
+                                <av:PointCollection x:Key="TrueConnector">310.5,490 160,490 160,574</av:PointCollection>
+                                <av:PointCollection x:Key="FalseConnector">449.5,490 479.5,490 479.5,416.5 580,416.5 580,73.5 710,73.5 710,103.5</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Până la'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="632, 487, 350, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input-station-arr…'" FullSelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="4e84ae00-ecb7-4b99-81c4-e802ed9d6ce6" InformativeScreenshot="05447809389f9fc3cb5cb5547722025f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="586, 447, 66, 30" ElementType="Text" FriendlyName="'Până la'" FullSelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' type='' class='' check:innerText='Până la' /&gt;" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                            <FlowStep.Next>
-                              <FlowStep x:Name="__ReferenceID4">
+                            <FlowDecision.True>
+                              <FlowStep x:Name="__ReferenceID3">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <av:Point x:Key="ShapeLocation">610,173.5</av:Point>
-                                    <av:Size x:Key="ShapeSize">200,53</av:Size>
-                                    <av:PointCollection x:Key="ConnectorLocation">710,226.5 710,253.5</av:PointCollection>
+                                    <av:Point x:Key="ShapeLocation">60,574</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into 'Până la'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Text="[ArrivalStation]" Version="V3">
-                                  <uix:NTypeInto.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="632, 487, 350, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input-station-arr…'" FullSelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="d97e7535-dc23-44f2-bcdc-54cdaf8d59fc" InformativeScreenshot="05447809389f9fc3cb5cb5547722025f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                <Throw Exception="[new Exception(&quot;Incorrect Departure&quot;)]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Throw_2">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Throw>
+                              </FlowStep>
+                            </FlowDecision.True>
+                            <FlowDecision.False>
+                              <FlowStep x:Name="__ReferenceID5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">610,103.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">710,156.5 710,173.5</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Până la'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="632, 487, 350, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input-station-arr…'" FullSelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="4e84ae00-ecb7-4b99-81c4-e802ed9d6ce6" InformativeScreenshot="05447809389f9fc3cb5cb5547722025f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
                                         <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target DesignTimeRectangle="586, 447, 66, 30" ElementType="Text" FriendlyName="'Până la'" FullSelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' type='' class='' check:innerText='Până la' /&gt;" SearchSteps="FuzzySelector" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
-                                  </uix:NTypeInto.Target>
-                                </uix:NTypeInto>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
                                 <FlowStep.Next>
-                                  <FlowStep x:Name="__ReferenceID6">
+                                  <FlowStep x:Name="__ReferenceID4">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <av:Point x:Key="ShapeLocation">610,253.5</av:Point>
-                                        <av:Size x:Key="ShapeSize">200,53</av:Size>
-                                        <av:PointCollection x:Key="ConnectorLocation">710,306.5 710,346.5</av:PointCollection>
+                                        <av:Point x:Key="ShapeLocation">610,173.5</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">710,225.5 710,265.5</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NCheckState DisplayName="Check App State 'Nu a'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="1" Version="V3">
-                                      <uix:NCheckState.IfExists>
-                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,198" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_9">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Boolean">[FailedArrivalInput]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                        </Sequence>
-                                      </uix:NCheckState.IfExists>
-                                      <uix:NCheckState.IfNotExists>
-                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,383" sap2010:WorkflowViewState.IdRef="Sequence_20">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_10">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Boolean">[FailedArrivalInput]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Arrival entered successfully&quot;]" />
-                                        </Sequence>
-                                      </uix:NCheckState.IfNotExists>
-                                      <uix:NCheckState.Target>
-                                        <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="586, 538, 384, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Nu a'" FullSelectorArgument="&lt;webctrl id='span-validation-input-station-arrival-name' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='span-validation-input-station-arrival-name' tag='SPAN' type='' class='text-danger field-validation-valid' aaname='Nu a fost găsită nicio stație cu acest nume!' check:innerText='Nu a fost găsită nicio stație cu acest nume!' /&gt;" Guid="dbb3fd3c-777a-47b6-8ae6-9c568f6d1e5f" InformativeScreenshot="9e9530d9777b8431771d079a91514c37.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DeselectAfter="False" DisplayName="Type Into 'Până la'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="Simulate" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Text="[ArrivalStation]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="632, 487, 350, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input-station-arr…'" FullSelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="d97e7535-dc23-44f2-bcdc-54cdaf8d59fc" InformativeScreenshot="05447809389f9fc3cb5cb5547722025f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                           <uix:TargetAnchorable.Anchors>
                                             <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                               <uix:Target DesignTimeRectangle="586, 447, 66, 30" ElementType="Text" FriendlyName="'Până la'" FullSelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' type='' class='' check:innerText='Până la' /&gt;" SearchSteps="FuzzySelector" />
                                             </scg:List>
                                           </uix:TargetAnchorable.Anchors>
                                         </uix:TargetAnchorable>
-                                      </uix:NCheckState.Target>
-                                    </uix:NCheckState>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
                                     <FlowStep.Next>
-                                      <FlowDecision x:Name="__ReferenceID7" DisplayName="Arrival Input Incorrect" sap:VirtualizedContainerService.HintSize="121,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-                                        <FlowDecision.Condition>
-                                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="FailedArrivalInput = True" />
-                                        </FlowDecision.Condition>
+                                      <FlowStep x:Name="__ReferenceID12">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <av:Point x:Key="ShapeLocation">649.5,346.5</av:Point>
-                                            <av:Size x:Key="ShapeSize">121,87</av:Size>
-                                            <av:PointCollection x:Key="TrueConnector">649.5,390 580,390 580,453.5</av:PointCollection>
-                                            <av:PointCollection x:Key="FalseConnector">770.5,390 840,390 840,63.500000000000014 1000,63.500000000000014 1000,93.50000000000001</av:PointCollection>
+                                            <av:Point x:Key="ShapeLocation">610,265.5</av:Point>
+                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                            <av:PointCollection x:Key="ConnectorLocation">710,317.5 710,354</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <FlowDecision.True>
-                                          <FlowStep x:Name="__ReferenceID8">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <av:Point x:Key="ShapeLocation">480,453.5</av:Point>
-                                                <av:Size x:Key="ShapeSize">200,53</av:Size>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <Throw Exception="[new Exception(&quot;Incorrect Arrival&quot;)]" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="Throw_3">
+                                        <uix:NCheckState DisplayName="Check App State 'Bucecea'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="1" Version="V3">
+                                          <uix:NCheckState.IfExists>
+                                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                            </Throw>
-                                          </FlowStep>
-                                        </FlowDecision.True>
-                                        <FlowDecision.False>
-                                          <FlowStep x:Name="__ReferenceID10">
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'București (toate'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="763, 516, 278, 30" DesignTimeScaleFactor="1" FriendlyName="'București (toate'" FullSelectorArgument="&lt;webctrl id='ui-id-72' tag='DIV' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='ui-id-72' tag='DIV' type='' class='ui-menu-item-wrapper' aaname='' /&gt;" Guid="71809f7e-38ad-4501-ae90-ad9d023b7b4b" ImageBase64="" InformativeScreenshot="9c2c1ab24d9de037a9666668df388a76.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target DesignTimeRectangle="762, 477, 280, 38" ElementType="InputBox" FriendlyName="'bucu'" FullSelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                          </uix:NCheckState.IfExists>
+                                          <uix:NCheckState.IfNotExists>
+                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Rute + cumpără'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvTextArea="724, 277, 225, 35" CvTextArgument="Rute + cumpara" CvType="Text" DesignTimeRectangle="725, 273, 224, 38" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Rute + cumpără'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='                                         Rute + cumpără                                     ' check:innerText='Rute + cumpără' /&gt;" Guid="04362ffd-43b1-4c9d-8b51-35f3d3633268" InformativeScreenshot="bb8b7688c673f7dc5264dc45969ccc54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target DesignTimeRectangle="710, 181, 1140, 54" FriendlyName="'TRAFIC INTERN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;div' parentid='page' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='page' tag='DIV' class='navbar navbar-dark navbar-inverse navbar-expand-xl text-dark pt-1 pb-1 pl-0 pr-0 font-weight-bold text-1-1rem' aaname='                                                                                                                                ' check:innerText='TRAFIC INTERN&amp;#xD;&amp;#xA; Planificare călătorie &amp;#xD;&amp;#xA; Suport &amp;#xD;&amp;#xA; &amp;#xD;&amp;#xA;CONTUL MEU&amp;#xD;&amp;#xA;Autentificare&amp;#xD;&amp;#xA;RO EN' /&gt;" SearchSteps="FuzzySelector" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                          </uix:NCheckState.IfNotExists>
+                                          <uix:NCheckState.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvTextArea="768, 522, 63, 15" CvTextArgument="Bucecea" CvType="Text" DesignTimeRectangle="763, 516, 278, 30" DesignTimeScaleFactor="1" FriendlyName="'Bucecea'" FullSelectorArgument="&lt;webctrl id='ui-id-33' tag='DIV' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='ui-id-33' tag='DIV' type='' class='ui-menu-item-wrapper' aaname='' /&gt;" Guid="d61c645b-8b56-4d6c-8019-f765f898815a" InformativeScreenshot="93ffbc5c67e48c814f437912e258f731.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvTextArea="773, 485, 30, 20" CvTextArgument="buc" CvType="Text" DesignTimeRectangle="762, 477, 280, 38" ElementType="InputBox" FriendlyName="'buc'" FullSelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-arrival-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NCheckState.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NCheckState>
+                                        <FlowStep.Next>
+                                          <FlowStep x:Name="__ReferenceID6">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <av:Point x:Key="ShapeLocation">900,93.50000000000001</av:Point>
-                                                <av:Size x:Key="ShapeSize">200,53</av:Size>
-                                                <av:PointCollection x:Key="ConnectorLocation">1000,146.5 1000,173.5</av:PointCollection>
+                                                <av:Point x:Key="ShapeLocation">610,354</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                <av:PointCollection x:Key="ConnectorLocation">710,406 710,436.5</av:PointCollection>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Caută'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
-                                              <uix:NClick.Target>
-                                                <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvElementArea="723, 704, 70, 40" CvTextArea="736, 716, 44, 15" CvTextArgument="Cauta" CvType="Button" DesignTimeRectangle="725, 706, 68, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Caută'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Caută' check:text='Caută' /&gt;" Guid="2d30d095-0433-47ca-bba4-0f873ffe5816" InformativeScreenshot="16243ccb3b76e4c7dc86434b313cae19.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
-                                              </uix:NClick.Target>
-                                            </uix:NClick>
+                                            <uix:NCheckState DisplayName="Check App State 'Nu a'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="1" Version="V3">
+                                              <uix:NCheckState.IfExists>
+                                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,198" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Boolean">[FailedArrivalInput]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </uix:NCheckState.IfExists>
+                                              <uix:NCheckState.IfNotExists>
+                                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,383" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Boolean">[FailedArrivalInput]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Arrival entered successfully&quot;]" />
+                                                </Sequence>
+                                              </uix:NCheckState.IfNotExists>
+                                              <uix:NCheckState.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="586, 538, 384, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Nu a'" FullSelectorArgument="&lt;webctrl id='span-validation-input-station-arrival-name' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='span-validation-input-station-arrival-name' tag='SPAN' type='' class='text-danger field-validation-valid' aaname='Nu a fost găsită nicio stație cu acest nume!' check:innerText='Nu a fost găsită nicio stație cu acest nume!' /&gt;" Guid="dbb3fd3c-777a-47b6-8ae6-9c568f6d1e5f" InformativeScreenshot="9e9530d9777b8431771d079a91514c37.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="586, 447, 66, 30" ElementType="Text" FriendlyName="'Până la'" FullSelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Până la' parentid='form-search' tag='LABEL' type='' class='' check:innerText='Până la' /&gt;" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NCheckState.Target>
+                                            </uix:NCheckState>
                                             <FlowStep.Next>
-                                              <FlowStep x:Name="__ReferenceID9">
+                                              <FlowDecision x:Name="__ReferenceID7" Condition="[FailedArrivalInput = True]" DisplayName="Arrival Input Incorrect" sap:VirtualizedContainerService.HintSize="121,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <av:Point x:Key="ShapeLocation">900,173.5</av:Point>
-                                                    <av:Size x:Key="ShapeSize">200,53</av:Size>
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <av:Point x:Key="ShapeLocation">649.5,436.5</av:Point>
+                                                    <av:Size x:Key="ShapeSize">121,87</av:Size>
+                                                    <av:PointCollection x:Key="TrueConnector">649.5,480 570,480 570,574</av:PointCollection>
+                                                    <av:PointCollection x:Key="FalseConnector">770.5,480 870,480 870,63.500000000000014 1000,63.500000000000014 1000,93.50000000000001</av:PointCollection>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <uix:NCheckState DisplayName="Check App State 'Înapoi'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="3" Version="V3">
-                                                  <uix:NCheckState.IfExists>
-                                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,333" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                                <FlowDecision.True>
+                                                  <FlowStep x:Name="__ReferenceID8">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <av:Point x:Key="ShapeLocation">470,574</av:Point>
+                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Throw Exception="[new Exception(&quot;Incorrect Arrival&quot;)]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Throw_3">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NExtractData sap2010:Annotation.AnnotationText="TO FIX: &#xA;Different Structure when the Trains have not arrived yet&#xA;" AppendResults="False" ContinueOnError="True" DataTable="[TrainInformation]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Train_Information' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Departure_Time' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ride_Length' ReferenceName='Column2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Delay' ReferenceName='Column3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Arrival_Time' ReferenceName='Column4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" Version="V3">
-                                                        <uix:NExtractData.Target>
-                                                          <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Rute-trenuri/Constanta/Targoviste?DepartureDate=15.01.2024&amp;TimeSelectionId=0&amp;MinutesInDay=0&amp;OrderingTypeId=0&amp;ConnectionsTypeId=1&amp;BetweenTrainsMinimumMinutes=15&amp;ChangeStationName=" DesignTimeRectangle="725, 326, 1110, 1395" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='div-results' tag='UL' /&gt;" Guid="aa3009bb-a9b1-4287-b194-5981ca06bd67" InformativeScreenshot="7b996e9787795f8a6f46aa6c0cb740f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Constanța - Târgoviște - Bilete online CFR Călători' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-                                                        </uix:NExtractData.Target>
+                                                    </Throw>
+                                                  </FlowStep>
+                                                </FlowDecision.True>
+                                                <FlowDecision.False>
+                                                  <FlowStep x:Name="__ReferenceID10">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <av:Point x:Key="ShapeLocation">900,93.50000000000001</av:Point>
+                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                        <av:PointCollection x:Key="ConnectorLocation">1000,146.5 1000,173.5</av:PointCollection>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Caută'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" CvElementArea="723, 704, 70, 40" CvTextArea="736, 716, 44, 15" CvTextArgument="Cauta" CvType="Button" DesignTimeRectangle="725, 706, 68, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Caută'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Caută' check:text='Caută' /&gt;" Guid="2d30d095-0433-47ca-bba4-0f873ffe5816" InformativeScreenshot="16243ccb3b76e4c7dc86434b313cae19.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                                                      </uix:NClick.Target>
+                                                    </uix:NClick>
+                                                    <FlowStep.Next>
+                                                      <FlowStep x:Name="__ReferenceID9">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                            <av:Point x:Key="ShapeLocation">900,173.5</av:Point>
+                                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                      </uix:NExtractData>
-                                                    </Sequence>
-                                                  </uix:NCheckState.IfExists>
-                                                  <uix:NCheckState.IfNotExists>
-                                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,202" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <Throw Exception="[new Exception(&quot;Page could not load&quot;)]" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Throw_4" />
-                                                    </Sequence>
-                                                  </uix:NCheckState.IfNotExists>
-                                                  <uix:NCheckState.Target>
-                                                    <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Rute-trenuri/Bucuresti-Nord/Constanta?DepartureDate=16.01.2024&amp;TimeSelectionId=0&amp;MinutesInDay=0&amp;OrderingTypeId=0&amp;ConnectionsTypeId=1&amp;BetweenTrainsMinimumMinutes=15&amp;ChangeStationName=" DesignTimeRectangle="586, 491, 109, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Înapoi'" FullSelectorArgument="&lt;webctrl id='button-back-results' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='button-back-results' tag='BUTTON' type='submit' class='btn btn-secondary mb-1' aaname='              Înapoi         ' check:innerText='Înapoi' /&gt;" Guid="305ce831-cf5a-4e36-84a2-c050654e197f" InformativeScreenshot="77533b96f6ec581ff2f748472fafe67e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - București Nord - Constanța - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                                      <uix:TargetAnchorable.Anchors>
-                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                          <uix:Target DesignTimeRectangle="586, 210, 280, 48" ElementType="Text" FriendlyName="'Rute + cumpără'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='                                         Rute + cumpără                                     ' check:innerText='Rute + cumpără' /&gt;" SearchSteps="FuzzySelector" />
-                                                        </scg:List>
-                                                      </uix:TargetAnchorable.Anchors>
-                                                    </uix:TargetAnchorable>
-                                                  </uix:NCheckState.Target>
-                                                </uix:NCheckState>
-                                              </FlowStep>
+                                                        <uix:NCheckState DisplayName="Check App State 'Înapoi'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Timeout="3" Version="V3">
+                                                          <uix:NCheckState.IfExists>
+                                                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,333" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <uix:NExtractData sap2010:Annotation.AnnotationText="TO FIX: &#xA;Different Structure when the Trains have not arrived yet&#xA;" AppendResults="False" ContinueOnError="True" DataTable="[TrainInformation]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Train_Information' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Departure_Time' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ride_Length' ReferenceName='Column2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Delay' ReferenceName='Column3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Arrival_Time' ReferenceName='Column4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                                                                <uix:NExtractData.Target>
+                                                                  <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Rute-trenuri/Constanta/Targoviste?DepartureDate=15.01.2024&amp;TimeSelectionId=0&amp;MinutesInDay=0&amp;OrderingTypeId=0&amp;ConnectionsTypeId=1&amp;BetweenTrainsMinimumMinutes=15&amp;ChangeStationName=" DesignTimeRectangle="725, 326, 1110, 1395" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='div-results' tag='UL' /&gt;" Guid="aa3009bb-a9b1-4287-b194-5981ca06bd67" InformativeScreenshot="7b996e9787795f8a6f46aa6c0cb740f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Constanța - Târgoviște - Bilete online CFR Călători' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                                                </uix:NExtractData.Target>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uix:NExtractData>
+                                                            </Sequence>
+                                                          </uix:NCheckState.IfExists>
+                                                          <uix:NCheckState.IfNotExists>
+                                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,202" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <Throw Exception="[new Exception(&quot;Page could not load&quot;)]" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Throw_4" />
+                                                            </Sequence>
+                                                          </uix:NCheckState.IfNotExists>
+                                                          <uix:NCheckState.Target>
+                                                            <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Rute-trenuri/Bucuresti-Nord/Constanta?DepartureDate=16.01.2024&amp;TimeSelectionId=0&amp;MinutesInDay=0&amp;OrderingTypeId=0&amp;ConnectionsTypeId=1&amp;BetweenTrainsMinimumMinutes=15&amp;ChangeStationName=" DesignTimeRectangle="586, 491, 109, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Înapoi'" FullSelectorArgument="&lt;webctrl id='button-back-results' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='button-back-results' tag='BUTTON' type='submit' class='btn btn-secondary mb-1' aaname='              Înapoi         ' check:innerText='Înapoi' /&gt;" Guid="305ce831-cf5a-4e36-84a2-c050654e197f" InformativeScreenshot="77533b96f6ec581ff2f748472fafe67e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - București Nord - Constanța - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                  <uix:Target DesignTimeRectangle="586, 210, 280, 48" ElementType="Text" FriendlyName="'Rute + cumpără'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='                                         Rute + cumpără                                     ' check:innerText='Rute + cumpără' /&gt;" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NCheckState.Target>
+                                                        </uix:NCheckState>
+                                                      </FlowStep>
+                                                    </FlowStep.Next>
+                                                  </FlowStep>
+                                                </FlowDecision.False>
+                                              </FlowDecision>
                                             </FlowStep.Next>
                                           </FlowStep>
-                                        </FlowDecision.False>
-                                      </FlowDecision>
+                                        </FlowStep.Next>
+                                      </FlowStep>
                                     </FlowStep.Next>
                                   </FlowStep>
                                 </FlowStep.Next>
                               </FlowStep>
-                            </FlowStep.Next>
-                          </FlowStep>
-                        </FlowDecision.False>
-                      </FlowDecision>
+                            </FlowDecision.False>
+                          </FlowDecision>
+                        </FlowStep.Next>
+                      </FlowStep>
                     </FlowStep.Next>
                   </FlowStep>
                 </FlowStep.Next>
               </FlowStep>
-              <FlowStep x:Name="__ReferenceID11">
+              <FlowStep x:Name="__ReferenceID13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">290,103.5</av:Point>
-                    <av:Size x:Key="ShapeSize">200,53</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">390,156.5 390,183.5</av:PointCollection>
+                    <av:Point x:Key="ShapeLocation">280,104</av:Point>
+                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">380,156 380,174</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'De la'" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'De la'" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="66cd4be1-3345-4a3e-959a-a4b9ec195b96" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://bilete.cfrcalatori.ro/ro-RO/Itineraries" DesignTimeRectangle="632, 328, 350, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT input-station-dep…'" FullSelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-station-departure-name' tag='INPUT' type='text' class='form-control ui-autocomplete-input' aaname='' /&gt;" Guid="f98c64a6-1256-4a60-8109-86a40249e66e" InformativeScreenshot="4d35d1fb7318153401decdcd541a0e1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rute + cumpără - Bilete online CFR Călători' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -496,6 +624,8 @@
               <x:Reference>__ReferenceID8</x:Reference>
               <x:Reference>__ReferenceID9</x:Reference>
               <x:Reference>__ReferenceID10</x:Reference>
+              <x:Reference>__ReferenceID11</x:Reference>
+              <x:Reference>__ReferenceID12</x:Reference>
             </Flowchart>
           </Sequence>
         </ActivityAction>
