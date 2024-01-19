@@ -80,6 +80,7 @@
       <x:String>UiPath.Mail.Activities.Business.ForEachMail</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -165,6 +166,8 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.Unsafe</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Main" sap:VirtualizedContainerService.HintSize="884,1403" sap2010:WorkflowViewState.IdRef="Flowchart_5">
@@ -176,6 +179,7 @@
       <Variable x:TypeArguments="x:Boolean" Name="ValidConfig" />
       <Variable x:TypeArguments="sd:DataTable" Name="TrainInformation" />
       <Variable x:TypeArguments="x:Boolean" Name="DataLoadedSuccessfully" />
+      <Variable x:TypeArguments="scg:List(s:Tuple(x:Int32, x:Int32))" Name="AvailableSeats" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -331,6 +335,7 @@
                                     <Flowchart.Variables>
                                       <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="stations" />
                                       <Variable x:TypeArguments="x:String" Name="DataGatheringError" />
+                                      <Variable x:TypeArguments="x:String" Name="TextToCheck" />
                                     </Flowchart.Variables>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -390,7 +395,7 @@
                                                       <av:PointCollection x:Key="ConnectorLocation">610,406 610,436.5</av:PointCollection>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <TryCatch DisplayName="Try to Get Train Data" sap:VirtualizedContainerService.HintSize="534,574" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                                  <TryCatch DisplayName="Try to Get Train Data" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -403,11 +408,12 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetRequestedTrainData.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="GetRequestedTrainData.xaml">
+                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetRequestedTrainData.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="GetRequestedTrainData.xaml">
                                                           <ui:InvokeWorkflowFile.Arguments>
                                                             <InArgument x:TypeArguments="x:String" x:Key="DepartureStation">[stations.ElementAt(0).Value]</InArgument>
                                                             <InArgument x:TypeArguments="x:String" x:Key="ArrivalStation">[stations.ElementAt(1).Value]</InArgument>
                                                             <OutArgument x:TypeArguments="sd:DataTable" x:Key="TrainInformation">[TrainInformation]</OutArgument>
+                                                            <OutArgument x:TypeArguments="scg:List(s:Tuple(x:Int32, x:Int32))" x:Key="AvailableSeats">[AvailableSeats]</OutArgument>
                                                           </ui:InvokeWorkflowFile.Arguments>
                                                         </ui:InvokeWorkflowFile>
                                                         <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_11">
@@ -479,11 +485,12 @@
                                                               <av:PointCollection x:Key="ConnectorLocation">400,576 400,593.5</av:PointCollection>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SaveToExcel.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="SaveToExcel.xaml">
+                                                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SaveToExcelLoop.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="SaveToExcelLoop.xaml">
                                                             <ui:InvokeWorkflowFile.Arguments>
                                                               <InArgument x:TypeArguments="x:String" x:Key="Station1">[stations.ElementAt(0).Value]</InArgument>
                                                               <InArgument x:TypeArguments="x:String" x:Key="Station2">[stations.ElementAt(1).Value]</InArgument>
                                                               <InArgument x:TypeArguments="sd:DataTable" x:Key="TrainInformation">[TrainInformation]</InArgument>
+                                                              <InArgument x:TypeArguments="scg:List(s:Tuple(x:Int32, x:Int32))" x:Key="AvailableSeats">[AvailableSeats]</InArgument>
                                                             </ui:InvokeWorkflowFile.Arguments>
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -653,7 +660,7 @@
                               <av:PointCollection x:Key="ConnectorLocation">210,700 270,700 270,390 210,390</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Delay Duration="00:00:00" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Delay_4">
+                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Delay_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
